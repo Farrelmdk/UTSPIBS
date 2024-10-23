@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS PIBS Cornelius Farrel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="aa.jpg" alt="Logo" class="header-img">
+        <h1>Cornelius Farrel Mahardika</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('biodata')">Biodata</a></li>
+            <li><a href="#" onclick="showSection('pendidikan')">Pendidikan</a></li>
+            <li><a href="#" onclick="showSection('pengalaman')">Pengalaman</a></li>
+            <li><a href="#" onclick="showSection('keahlian')">Keahlian</a></li>
+            <li><a href="#" onclick="showSection('publikasi')">Publikasi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections for each navigation item -->
+    <section id="biodata" class="content-section">
+        <h2>Biodata</h2>
+        <p><strong>NIM:</strong> 2023081026</p>
+        <p><strong>Nama:</strong> Cornelius Farrel Mahardika</p>
+        <p><strong>Agama:</strong> Katolik</p>
+        <p><strong>Tanggal Lahir:</strong> 14 Juli 2005</p>
+        <p><strong>Tempat Lahir:</strong> Jakarta</p>
+    </section>
+
+    <section id="pendidikan" class="content-section" style="display:none;">
+        <h2>Pendidikan</h2>
+        <p><strong>Sd:</strong> strada bhakti utama</p>
+        <p><strong>SMP:</strong> strada bhakti utama</p>
+        <p><strong>SMA:</strong> Yadika 3</p>
+        <p><strong>S1:</strong> Universitas Pembangunan Jaya</p>
+    </section>
+
+    <section id="pengalaman" class="content-section" style="display:none;">
+        <h2>Pengalaman</h2>
+        <p> Panitia Keamanan Event GIDHUB</p>
+        <p> Panitia PRIMA divisi mentor</p>
+        <p> Divisi minat dan bakat HIMASIF</p>
+    </section>
+
+    <section id="keahlian" class="content-section" style="display:none;">
+        <h2>Keahlian</h2>
+        <p>Programming, Data Analysis, Design UI/UX</p>
+    </section>
+
+    <section id="publikasi" class="content-section" style="display:none;">
+        <h2>Publikasi</h2>
+        <p><strong>Paper 1:</strong> Pengaruh AI terhadap tenaga kerja manusia</p>
+        <p><strong>Paper 2:</strong> Dampak AI</p>
+    </section>
+
+    <!-- Aside Section -->
+        <aside>
+            <h2>Hobi</h2>
+            <ul>
+                <li>Basket</li>
+                <li>Gitar</li>
+                <li>Design</li>
+            </ul>
+        </aside>
+    <footer>
+        <div class="social-media">
+            <p>Email: farrelcornelius4@gmail.com</p>
+            <p>FB: @farrelmahadika</p>
+            <p>Instagram: @Farrel.mdk</p>
+        </div>
+        <p>© Copyright 2024. Farrel punya</p>
+        <div class="social-media">
+        <p>WEB RESPONSIVE</p>
+        <p>Web ini dibuat oleh Farrel</p>
+        </div>
+    </footer>
+
+<script>
+    function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.getElementsByClassName('content-section');
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+    }
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
